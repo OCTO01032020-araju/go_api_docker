@@ -1,0 +1,31 @@
+{
+	"info": {
+		"_postman_id": "d53cac4e-d686-433d-a974-5564bfa69e4c",
+		"name": "test app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:4343/mail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "Delivered-To: santa@northpole.com\r\nReceived: by 10.159.41.68 with SMTP id t62csp570647uat;\r\n       Thu, 16 Mar 2017 04:44:28 -0700 (PDT)\r\nX-Received: by 10.99.140.69 with SMTP id q5mr9342725pgn.179.1489664668601;\r\n       Thu, 16 Mar 2017 04:44:28 -0700 (PDT)\r\nReturn-Path: <llbean.511020444@envfrm.r1234s5.com>\r\nReceived: from omp.e1.llbean.com (omp.e1.llbean.com. [199.7.202.38])\r\n       by mx.google.com with ESMTPS id d2si234254576pli.110.2017.03.16.04.44.28\r\n       for <santa@northpole.com>\r\n       (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);\r\n       Thu, 16 Mar 2017 04:44:28 -0700 (PDT)\r\nReceived-SPF: pass (google.com: domain of llbean.511020444@envfrm.r1234s5.comdesignates 199.8.123.38 as permitted sender) client-ip=199.8.123.38;\r\nAuthentication-Results: mx.google.com;\r\n      dkim=pass header.i=@e1.llbean.com;\r\n      dkim=pass header.i=@responsys.net;\r\n      dkim=pass header.i=@responsys.net;\r\n      spf=pass (google.com: domain of llbean.511020444@envfrm.r1234s5.comdesignates 199.8.123.38 as permitted sender) smtp.mailfrom=llbean.511020444@envfrm.r1234s5.com;\r\n      dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=e1.llbean.com\r\nReceived: by omp.e1.llbean.com id hp9t9o1hctok for <santa@northpole.com>; Thu, 16 Mar 2017 04:25:51 -0700 (envelope-from <llbean.511020444@envfrm.r1234s5.com>)\r\nX-CSA-Complaints: whitelist-complaints@eco.de\r\nReceived: by omp.e1.llbean.com id hp9r3u1hctou for <santa@northpole.com>; Thu, 16 Mar 2017 04:22:00 -0700 (envelope-from <llbean.50094@envfrm.rsys5.com>)\r\nMIME-Version: 1.0\r\nContent-Type: multipart/mixed; boundary=\"----msg_border_dPN32EhfaN\"\r\nDate: Thu, 16 Mar 2017 04:22:00 -0700\r\nTo: santa@northpole.com\r\nFrom: \"L.L.Bean\" <llbean@e1.llbean.com>\r\nReply-To: \"L.L.Bean\" <reply@e1.llbean.com>\r\nSubject: Climbing mountains. Breaking barriers.\r\nFeedback-ID: 50021:10567834:oraclersys\r\nMessage-ID: <0.0.4D.537.1D2EDF347E56956.0@omp.e1.llbean.com>\r\n \r\n------msg_border_dPN32EhfaN\r\nDate: Thu, 16 Mar 2017 04:22:00 -0700\r\nContent-Type: multipart/alternative; boundary=\"----alt_border_BrDQaPYzhN_1\"\r\n \r\n------alt_border_BrDQaPYzhN_1\r\nContent-Type: text/plain; charset=\"UTF-8\"\r\nContent-Transfer-Encoding: quoted-printable\r\n \r\nL.L.Bean Email Update\r\n____________________\r\nTo view this email with images, click below."
+				},
+				"url": {
+					"raw": "localhost:4343/mail",
+					"host": [
+						"localhost"
+					],
+					"port": "4343",
+					"path": [
+						"mail"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
